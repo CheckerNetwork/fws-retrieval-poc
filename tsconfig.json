@@ -1,21 +1,17 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "checkJs": true,
+    // Based on https://nodejs.org/docs/latest-v24.x/api/typescript.html#type-stripping
+    "noEmit": true,
+    "target": "esnext",
+    "module": "nodenext",
+    "rewriteRelativeImportExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+
     "skipLibCheck": true,
-    "lib": ["es2022"],
-    "target": "es2022",
-    "module": "Node16",
-    "moduleResolution": "node16",
-
+    "resolveJsonModule": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "dist",
-    "declarationMap": true,
-    "resolveJsonModule": true
+    "forceConsistentCasingInFileNames": true
   },
   "exclude": ["dist/**/*"]
 }

@@ -13,7 +13,6 @@
   "license": "MIT",
   "author": "",
   "type": "module",
-  "main": "index.js",
   "scripts": {
     "lint": "eslint && prettier --check .",
     "lint:fix": "eslint --fix && prettier --write .",
@@ -23,9 +22,12 @@
   "prettier": "@checkernetwork/prettier-config",
   "devDependencies": {
     "@checkernetwork/prettier-config": "^1.0.0",
+    "@types/node": "^22.15.19",
+    "@wagmi/cli": "^2.3.1",
     "eslint": "^9.23.0",
     "neostandard": "^0.12.1",
     "prettier": "^3.5.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "viem": "^2.30.0"
   }
 }

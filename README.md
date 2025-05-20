@@ -10,3 +10,4 @@
    jq '.abi' out/PDPVerifier.sol/PDPVerifier.json > PDPVerifier.abi.json
    ```
 4. Copy `PDPVerifier.abi.json` to `vendored` in this project
+5. Run `wagmi generate`
